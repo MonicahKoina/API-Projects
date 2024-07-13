@@ -1,7 +1,4 @@
-:root{
-    --bg-color1: #1d1c1cec;
-    --bg-color2: #020202;   
-}
+
 *{
     margin: 0;
     padding: 0;
@@ -9,23 +6,29 @@
 }
 body{
     min-width: 100vh;
-    background-color: #1d1c1cec;
-    color: #fff;
+    background-color: #2e1c15ec;
     font-family: sans-serif;
     padding: 0 15px;
+}
+.logo{
+    font-family: "Kaushan Script", cursive;
+    font-weight: 800;
+    color: blanchedalmond;
+}
+.logo span{
+    color: #fff;
 }
 .header{
     position: sticky;
     top: 0;
     justify-content: space-between;
-    background-color: #1d1c1cec;
+    background: #64523d;
     display: flex;
     align-items: center;
-    padding: 15px 0;
     margin-bottom: 10px;
-    
+    padding: 15px 0; 
     & #city-input{
-        background-color: #302d2d;
+        background-color: #2e1c15ec;
         border: none;
         padding: 10px;
         font-size: 16px;
@@ -36,7 +39,7 @@ body{
         outline: none;
     }
     & #searchBTN{
-        background-color: #302d2d;
+        background-color: #2e1c15ec;
         border: none;
         border-radius: 25px;
         padding: 12px;
@@ -45,12 +48,42 @@ body{
         cursor: pointer;
     }
     & #locationBTN{
-        background-color:#302d2d ;
+        background-color:#2e1c15ec;
         border: none;
         font-size: 16px;
         border-radius: 25px;
         padding: 12px;
-        color: #fa3232;
+        color: #f8fafcec;
         cursor: pointer;
+    }
+}
+.card{
+    background-color: #2e1c15ec;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    & p{
+        font-size: 14px;
+        color: #fff;
+    }
+    & h2{
+        font-size: 32px;
+        font-weight: 500;
+        color: #fff;
+    }
+}
+.weather-data{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    & .weather-left{
+        grid-column: span 1;
+
+    }
+    & .current-weather{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
     }
 }
